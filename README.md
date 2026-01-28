@@ -35,18 +35,20 @@ A hybrid architecture mirrors how **modern biometric authentication systems** ar
 
 ## 🏗️ High-Level Architecture
 
+```text
 Client Application (Java)
 ├─ Webcam Capture
 ├─ Face Detection
 ├─ Liveness Detection
 ├─ Feature Extraction
 └─ Secure API Client
-↓ (TLS + Encrypted Payload)
+        ↓ (TLS + Encrypted Payload)
 Backend Service (Java)
 ├─ Enrollment Service
 ├─ Matching Engine
 ├─ Encrypted Template Store
 └─ Authentication Decision
+```
 
 ---
 
@@ -102,20 +104,22 @@ This project intentionally emphasizes **security-first design**:
 
 ## 📁 Planned Project Structure
 
+```text
 hybrid-facial-biometric-authentication/
 ├─ client/
-│ ├─ src/main/java/
-│ ├─ src/main/resources/
-│ └─ pom.xml
+│  ├─ src/main/java/
+│  ├─ src/main/resources/
+│  └─ pom.xml
 ├─ server/
-│ ├─ src/main/java/
-│ ├─ src/main/resources/
-│ └─ pom.xml
+│  ├─ src/main/java/
+│  ├─ src/main/resources/
+│  └─ pom.xml
 ├─ diagrams/
-│ ├─ uml/
-│ ├─ sequence/
-│ └─ dataflow/
+│  ├─ uml/
+│  ├─ sequence/
+│  └─ dataflow/
 └─ README.md
+```
 
 ---
 
